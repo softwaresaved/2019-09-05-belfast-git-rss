@@ -26,12 +26,12 @@ For this workshop we expect:
 ## Schedule
 |Time|Topic|
 |----|-----|
-|14:00||Why use version control|
-|14:15||Setup|
-|x||x|
-|15:00||Break|
-|15:30||Resume|
-|16:50||Finish|
+|14:00|Why use version control|
+|14:15|Setup|
+|x|x|
+|15:00|Break|
+|15:30|Resume|
+|16:50|Finish|
 
 
 
