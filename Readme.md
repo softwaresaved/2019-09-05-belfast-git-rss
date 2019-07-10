@@ -17,7 +17,7 @@ The lesson we will be using are loosely based on those provided by software carp
 For this workshop we expect:
 
 * Participants to bring their own laptops.
-* Network access to the internetl.
+* Network access to the internet.
 * Some familiarity with the user of a terminal/shell/powershell but is not mandatory.
 * You should have installed:
   * A version of [git](https://carpentries.github.io/workshop-template/#git).
