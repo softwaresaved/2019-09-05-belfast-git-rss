@@ -19,7 +19,18 @@ For this workshop we expect:
 * Participants to bring their own laptops.
 * Network access to the internet.
 * Some familiarity with the user of a terminal/shell/powershell but is not mandatory.
-* You should have installed:
+* You must have installed:
   * A version of [git](https://carpentries.github.io/workshop-template/#git).
   * A [text editor](https://carpentries.github.io/workshop-template/#editor).
+  
+## Schedule
+||Time||Topic||
+|14:00||Why use version control|
+|14:15||Setup|
+|x||x|
+|15:00||Break|
+|15:30||Resume|
+|16:50||Finish|
+
+
 
