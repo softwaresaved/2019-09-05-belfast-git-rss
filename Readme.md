@@ -24,7 +24,8 @@ For this workshop we expect:
   * A [text editor](https://carpentries.github.io/workshop-template/#editor).
   
 ## Schedule
-||Time||Topic||
+|Time|Topic|
+|----|-----|
 |14:00||Why use version control|
 |14:15||Setup|
 |x||x|
