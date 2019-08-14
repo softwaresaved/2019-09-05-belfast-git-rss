@@ -2,9 +2,22 @@
 
 ## Contents
 
-[TOC]
 
-
+* [Setting up a local repository](#setting-up-a-local-repository)
+   * [Pre-checks](#pre-checks)
+   * [Check that we have git in the shell](#check-that-we-have-git-in-the-shell)
+   * [Getting help](#getting-help)
+   * [Registering with git](#registering-with-git)
+   * [Creating a repository](#creating-a-repository)
+   * [First commit](#first-commit)
+   * [More commits](#more-commits)
+   * [Adding directories](#adding-directories)
+   * [Changing a commit message](#changing-a-commit-message)
+   * [Exploring history](#exploring-history)
+   * [Ignoring files](#ignoring-files)
+   * [Tagging](#tagging)
+* [Creating remote repositories](#creating-remote-repositories)
+* [Resources](#resources)
 
 # Setting up a local repository
 
