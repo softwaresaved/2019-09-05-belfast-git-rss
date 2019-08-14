@@ -88,5 +88,101 @@ Putting entries into:
 $ ls ~/.gitconfig
 ```
 
+## Creating a repository
+
+Let's create a repository:
+
+```bash
+ $ mkdir projectX
+ $ cd projectX
+```
+
+Check what is there:
+
+```bash
+ $ ls -A
+```
+
+Initialise the repository:
+
+```bash
+ $ git init
+```
+
+Check to see what has changed:
+
+```bash
+ $ ls -A
+```
+
+Check the status of the repository.
+
+```bash
+ $ git status
+```
+
+## First commit
+
+Edit a file (use an editor you are familiar with):
+
+```bash
+ $ nano README.md
+```
+
+For more information on using markdown see this [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+Could add:
+
+ > \# Project X
+
+Check the state:
+
+```bash
+ $ ls
+```
+
+Check the file contents:
+
+```bash
+ $ cat README.md
+```
+
+and what is the repository status?
+
+```bash
+ $ git status
+```
+
+Workflow
+
+    working directory --> staging area --> git repository
+           ^                                     |
+           |                                     |
+           +-------------------------------------+
+
+Add the file to the staging area:
+
+```bash
+$ git add README.md
+```
+
+Let's check the status:
+
+```bash
+ $ git status
+```
+
+Suppose you made a mistake and you want to unstage:
+
+```bash
+ $ git rm --cached README.md
+```
+
+Check:
+
+```bash
+ $ git status
+```
+
 # Resources
 
