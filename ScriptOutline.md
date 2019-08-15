@@ -13,10 +13,13 @@
    * [More commits](#more-commits)
    * [Adding directories](#adding-directories)
    * [Changing a commit message](#changing-a-commit-message)
+* [Creating remote repositories](#creating-remote-repositories)
+* [Back to local repositories](#back-to-local-repositories)
+
    * [Exploring history](#exploring-history)
    * [Ignoring files](#ignoring-files)
    * [Tagging](#tagging)
-* [Creating remote repositories](#creating-remote-repositories)
+* [Branching](#branching)
 * [Resources](#resources)
 
 # Setting up a local repository
@@ -297,6 +300,25 @@ If you commit with a typo you can change:
 $ git commit --amend -m "New message."
 ```
 
+# Creating remote repositories
+
+There are a number of external git repositories hosts you can use if your local institution does not have one.
+
+| Provider  | URL                                                   |
+| --------- | ----------------------------------------------------- |
+| GitHub    | [https://github.com](https://github.com/)             |
+| GitLab    | [https://about.gitlab.com](https://about.gitlab.com/) |
+| BitBucket | https://bitbucket.org/product                         |
+| ...       | ...                                                   |
+
+There are more, all services are roughly similar but for the free service these offer advantages/disadvantages in different areas. For a more a more exhaustive comparison see this [wikipedia article](https://en.wikipedia.org/wiki/Comparison_of_source-code-hosting_facilities). Without prejudice we shall be using GitHub.
+
+## Creating a remote repository
+
+
+
+# Back to local repositories
+
 ## Exploring history
 
 Can do a diff with earlier versions:
@@ -384,16 +406,17 @@ $ git show v1.0
 
 Use lightweight tags for your own use and annotated tags for the benefit of others.
 
+# 
+
+# Branching
 
 
-# Creating remote repositories
 
 # Resources
 
+* 
 
-<br>
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-<img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
-</a><br />
+<br/>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/>
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
 Creative Commons Attribution 4.0 International License</a>.
