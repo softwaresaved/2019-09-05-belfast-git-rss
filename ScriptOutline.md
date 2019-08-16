@@ -11,6 +11,7 @@
    * [Creating a repository](#creating-a-repository)
    * [First commit](#first-commit)
    * [More commits](#more-commits)
+   * [Exercise 1](#exercise-1)
    * [Adding directories](#adding-directories)
    * [Changing a commit message](#changing-a-commit-message)
 * [Creating remote repositories](#creating-remote-repositories)
@@ -269,6 +270,10 @@ $ git diff --staged
 
 Make more changes to show that there is a difference  between what is committed comes from the staging area and not the working copy.
 
+## Exercise 1
+
+Do some additional changes to your repository. Do some more changes to the `Readme.md` file. Try adding and committing some new files.
+
 ## Adding directories
 
 Cannot add directories by themselves:
@@ -315,7 +320,40 @@ There are more, all services are roughly similar but for the free service these 
 
 ## Creating a remote repository
 
+We will use GitHub. We are going to create a remote repository on GitHub and push our content.
 
+1. Go to [http://github.com](http://github.com/).
+2. Login (if you have not created an account you will have to sign up).
+3. Click on the `+` and choose `New repository`.
+4. Choose a name for your repository `theis`.
+5. Use `…or push an existing repository from the command line`.
+6. Follow the instructions there.
+7. Click on `Overview` on the left hand menu and you should see your file together with the commits.
+8. Click on source and you should be able to browse your sources.
+
+Now, go outside your git repo:
+
+```bash
+cd ..           # Go outside your repository.
+rm -fr projectx # Be very careful with this command.
+```
+
+Now we recover your repository by doing:
+
+```bash
+git clone https://github.com/YourId/YourProjectName.git
+```
+
+Make sure that:
+
+* You are not inside another git repository.
+* If you have an existing directory with the same name (without the `.git` extension) then you can clone to another directory by giving it another name at the end.
+
+```bash
+git clone https://github.com/YourId/YourProjectName.git OtherName
+```
+
+The contents will then be saved to `OtherName`
 
 # Back to local repositories
 
