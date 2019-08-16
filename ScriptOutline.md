@@ -36,7 +36,7 @@ Make sure that:
 Just to check that `git` is installed in the local machine.
 
 ```bash
-$ git --version 
+git --version 
 ```
 
 ## Getting help
@@ -44,31 +44,31 @@ $ git --version
 You can get help from `git` by just typing it at the command line.
 
 ```bash
-$ git 
+git 
 ```
 
 by itself returns most common commands. Same as:
 
 ```bash
-$ git help 
+git help 
 ```
 
 You get an extended list of commands by doing:
 
 ```bash
-$ git help --all
+git help --all
 ```
 
 Want to know more about a command you can do:
 
 ```bash
-$ git help add
+git help add
 ```
 
 which is the same as:
 
 ```bash
- $ git add --help
+git add --help
 ```
 
 ## Registering with git
@@ -76,8 +76,8 @@ which is the same as:
 You have to tell git who you are (only have to do this once per machine):
 
 ```bash
-$ git config --global user.name "Mario Antonioletti"
-$ git config --global user.email "mario@epcc.ed.ac.uk"
+git config --global user.name "Mario Antonioletti"
+git config --global user.email "mario@epcc.ed.ac.uk"
 ```
 
 if you are going to use GitHub and want to keep your email private see [this page](https://help.github.com/en/articles/setting-your-commit-email-address).
@@ -85,21 +85,21 @@ if you are going to use GitHub and want to keep your email private see [this pag
 Can also set:
 
 ```bash
-$ git config --global color.ui "auto"
-$ git config --global core.editor "nano -w"
+git config --global color.ui "auto"
+git config --global core.editor "nano -w"
 ```
 
 You can see what configuration parameters you have 
 set by doing:
 
 ```bash
-$ git config -l
+git config -l
 ```
 
 Putting entries into:
 
 ```bash
-$ ls ~/.gitconfig
+ls ~/.gitconfig
 ```
 
 ## Creating a repository
@@ -107,32 +107,32 @@ $ ls ~/.gitconfig
 Let's create a repository:
 
 ```bash
- $ mkdir projectX
- $ cd projectX
+mkdir projectX
+cd projectX
 ```
 
 Check what is there:
 
 ```bash
- $ ls -A
+ ls -A
 ```
 
 Initialise the repository:
 
 ```bash
- $ git init
+ git init
 ```
 
 Check to see what has changed:
 
 ```bash
- $ ls -A
+ ls -A
 ```
 
 Check the status of the repository.
 
 ```bash
- $ git status
+ git status
 ```
 
 ## First commit
@@ -140,7 +140,7 @@ Check the status of the repository.
 Edit a file (use an editor you are familiar with):
 
 ```bash
- $ nano README.md
+ nano README.md
 ```
 
 For more information on using markdown see this [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
@@ -152,19 +152,19 @@ Could add:
 Check the state:
 
 ```bash
- $ ls
+ ls
 ```
 
 Check the file contents:
 
 ```bash
- $ cat README.md
+ cat README.md
 ```
 
 and what is the repository status?
 
 ```bash
- $ git status
+ git status
 ```
 
 Workflow
@@ -177,31 +177,31 @@ Workflow
 Add the file to the staging area:
 
 ```bash
-$ git add README.md
+git add README.md
 ```
 
 Let's check the status:
 
 ```bash
- $ git status
+ git status
 ```
 
 Suppose you made a mistake and you want to unstage:
 
 ```bash
- $ git rm --cached README.md
+ git rm --cached README.md
 ```
 
 Check:
 
 ```bash
- $ git status
+ git status
 ```
 
 ## More commits
 
 ```bash
- $ git commit -m"Add information about my project."
+ git commit -m"Add information about my project."
 
  [master (root-commit) 18e86a7] Add information about my project.
   1 file changed, 2 insertions(+)
@@ -211,19 +211,19 @@ Check:
 Check the status again:
 
 ```bash
- $ git status
+ git status
 ```
 
 If you do not specify the `-m` flag it will fire an editor for you.
 
 ```bash
- $ git log
+ git log
 ```
 
 Can have a shortened version of the commit log
 
 ```bash
- $ git log --oneline
+ git log --oneline
 ```
 
 Modify the text file:
@@ -235,37 +235,37 @@ Modify the text file:
  Check the contents:
 
 ```bash
- $ cat README.md
+ cat README.md
 ```
 
 and the status:
 
 ```bash
-$ git status
+git status
 ```
 
 Suppose you can't remember what you changed, you can do:
 
 ```bash
-$ git diff
+git diff
 ```
 
 If we add the file to the staging area:
 
 ```bash
-$ git add README.md
+git add README.md
 ```
 
 If you do:
 
 ```bash
-$ git diff
+git diff
 ```
 
 You can not see the difference because the file has been staged. However, you can do:
 
 ```bash
-$ git diff --staged
+git diff --staged
 ```
 
 Make more changes to show that there is a difference  between what is committed comes from the staging area and not the working copy.
@@ -302,7 +302,7 @@ Can get rid of the temporary files later.
 If you commit with a typo you can change:
 
 ```bash
-$ git commit --amend -m "New message."
+git commit --amend -m "New message."
 ```
 
 # Creating remote repositories
@@ -388,20 +388,20 @@ git show RevNum README.md
 You make modifications to a file that you no longer want to keep:
 
 ```bash
-$ git checkout -- README.md
+git checkout -- README.md
 ```
 
 Or you can even checkout earlier versions of the code:
 
 ```bash
-$ git checkout RevNum -- README.md
+git checkout RevNum -- README.md
 ```
 
 If you want to recover the state of the repository you can go back
 to `HEAD` by doing:
 
 ```bash
-$ git reset --hard HEAD
+git reset --hard HEAD
 ```
 
 ## Ignoring files
@@ -419,8 +419,8 @@ You have seen that `git status` is a really useful command to  show you what has
 add and commit this file and you will reduce the clutter you get.
 
 ```bash
-$ git add .gitignore
-$ git commit -m".gitignore: files to ignore."
+git add .gitignore
+git commit -m".gitignore: files to ignore."
 ```
 
 git will not let you commit files that are contained in the `.gitignore` file.
@@ -430,16 +430,16 @@ git will not let you commit files that are contained in the `.gitignore` file.
 Can put a human readable version. Lightweight tag:
 
 ```bash
-$ git tag v0.1
-$ git tag             # Lists available tags
-$ git show v0.1       # gives you information about the commit
+git tag v0.1
+git tag             # Lists available tags
+git show v0.1       # gives you information about the commit
 ```
 
 We can do some more edits and do an annotated tag:
 
 ```bash
-$ git tag -a v1.0 -m"First release."
-$ git show v1.0
+git tag -a v1.0 -m"First release."
+git show v1.0
 ```
 
 Use lightweight tags for your own use and annotated tags for the benefit of others.
