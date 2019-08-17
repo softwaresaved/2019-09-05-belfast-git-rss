@@ -444,11 +444,76 @@ git show v1.0
 
 Use lightweight tags for your own use and annotated tags for the benefit of others.
 
-# 
-
 # Branching
 
+Branching allows a very powerful way of forking your code. Suppose you want to instrument it for performance analysis or you are collaborating and you do not want to be modifying the same code at the same time. Unlike CVS and SVN branches are really cheap and uncomplicated.
 
+Can use to:
+
+* Explore/deveop a new feature
+* Stop developers clashing on development
+* Create a particular branch, a version of a release
+
+Let's write a bit of Python code to demonstrate `hello.py`:
+
+```python
+
+print("Hello World!")
+
+```
+
+Run the code `python hello.py`. Now suppose you want to instrument the code (put in timing calls). You do not want to do this in your master branch:
+
+```bash
+git branch           # list the branches available, only master
+git branch profile   # Creates the new branch:
+git checkout profile # Change to the new branch
+```
+
+Now change the code:
+
+```python
+import time
+
+start = time.time()
+
+print("Hello World!)
+
+end = time.time()
+
+print("Code took ",(end - start)," seconds)
+```
+
+Execute the code. Add, commit. 
+Go back to the master branch.
+Change the original code.
+
+```python
+
+print("Hello World!")
+print("I am a real programer now!")
+
+```
+Execute, add, commit. 
+
+```bash
+git checkout profile
+cat `hello.py`    # Execute
+git log --oneline # Check local changes
+git log --oneline master # Check changes on the master branch
+git merge master  # Incorporate changes from the maser branch
+```
+
+Make a change on the `Hello World` line. Execute, add, commit. Change
+back to the master branch. Change the same line, execute, add and commit.
+Go back to the profile branch and try to do a `merge` which should result
+in a conflict. Show how to resolve the conflict.
+
+To push the branch to the remote repository:
+
+```bash
+git push origin profile
+```
 
 # Resources
 
