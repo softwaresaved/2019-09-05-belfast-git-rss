@@ -21,19 +21,21 @@
    * [Ignoring files](#ignoring-files)
    * [Tagging](#tagging)
 * [Branching](#branching)
+
+   * [Removing a remote repository](#removing-a-remote-repository)
 * [Resources](#resources)
 
 # Setting up a local repository
 
 ## Pre-checks
 
-Make sure that:
+These are a reminder for the instructor. Make sure that:
 * Your `~/.gitconfig` file has been temporarily moved.
 * People can be paired up for the collaborative working.
 
 ## Check that we have git in the shell
 
-Just to check that `git` is installed in the local machine.
+Just to check that `git` is installed in your local machine.
 
 ```bash
 git --version 
@@ -73,7 +75,7 @@ git add --help
 
 ## Registering with git
 
-You have to tell git who you are (only have to do this once per machine):
+You first have to tell git who you are and your contact details (you only have to do this once per machine):
 
 ```bash
 git config --global user.name "Mario Antonioletti"
@@ -82,15 +84,14 @@ git config --global user.email "mario@epcc.ed.ac.uk"
 
 if you are going to use GitHub and want to keep your email private see [this page](https://help.github.com/en/articles/setting-your-commit-email-address).
 
-Can also set:
+You can also set other defaults:
 
 ```bash
 git config --global color.ui "auto"
 git config --global core.editor "nano -w"
 ```
 
-You can see what configuration parameters you have 
-set by doing:
+You can see what configuration parameters you have set by doing:
 
 ```bash
 git config -l
@@ -104,7 +105,7 @@ ls ~/.gitconfig
 
 ## Creating a repository
 
-Let's create a repository:
+Let's create a repository. Start by creating a new directory:
 
 ```bash
 mkdir projectX
@@ -114,7 +115,7 @@ cd projectX
 Check what is there:
 
 ```bash
- ls -A
+ls -A
 ```
 
 Initialise the repository:
@@ -129,7 +130,9 @@ Check to see what has changed:
  ls -A
 ```
 
-Check the status of the repository.
+You can remove the repository status by removing the `.git` directory.
+
+Check the status of the repository:
 
 ```bash
  git status
@@ -143,7 +146,7 @@ Edit a file (use an editor you are familiar with):
  nano README.md
 ```
 
-For more information on using markdown see this [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+The `md` extension is usually used for markdown. For more information on using markdown see this [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 Could add:
 
@@ -152,19 +155,19 @@ Could add:
 Check the state:
 
 ```bash
- ls
+ls
 ```
 
 Check the file contents:
 
 ```bash
- cat README.md
+cat README.md
 ```
 
 and what is the repository status?
 
 ```bash
- git status
+git status
 ```
 
 Workflow
@@ -180,16 +183,16 @@ Add the file to the staging area:
 git add README.md
 ```
 
-Let's check the status:
+Check the status of the repository:
 
 ```bash
- git status
+git status
 ```
 
 Suppose you made a mistake and you want to unstage:
 
 ```bash
- git rm --cached README.md
+git rm --cached README.md
 ```
 
 Check:
@@ -201,7 +204,7 @@ Check:
 ## More commits
 
 ```bash
- git commit -m"Add information about my project."
+git commit -m"Add information about my project."
 
  [master (root-commit) 18e86a7] Add information about my project.
   1 file changed, 2 insertions(+)
@@ -211,19 +214,19 @@ Check:
 Check the status again:
 
 ```bash
- git status
+git status
 ```
 
-If you do not specify the `-m` flag it will fire an editor for you.
+If you do not specify the `-m` flag it will fire an editor for you expecting you to add a commit message.
 
 ```bash
- git log
+git log
 ```
 
-Can have a shortened version of the commit log
+Can have a shortened version of the commit log:
 
 ```bash
- git log --oneline
+git log --oneline
 ```
 
 Modify the text file:
@@ -235,7 +238,7 @@ Modify the text file:
  Check the contents:
 
 ```bash
- cat README.md
+cat README.md
 ```
 
 and the status:
