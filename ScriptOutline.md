@@ -1,3 +1,7 @@
+# This is a new title
+
+
+
 # Version control for statistics
 
 ## Contents
@@ -408,9 +412,24 @@ hint: (e.g., 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
-If the remote repository has changed you MUST pull the remote changes to your remote 
+If the remote repository has changed you MUST pull the remote changes to your local repository and reconcile any conflicts (we cover that next). So you need to do:
+
+```bash]
+git pull   # Pull the changes
+git push   # If all went well with the pull
+```
+
+
 
 ## Resolving a conflict
+
+git can merge text files if the changes happen in different locations. However, if the changes happen in the same line or roughly the same region then you have to resolve the conflict. Suppose we change the same line in both your local and remote repositories, say the title then when you do a pull you will see something like:
+
+```bash
+
+```
+
+
 
 ## Who to Blame
 
