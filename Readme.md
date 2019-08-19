@@ -17,12 +17,12 @@ The lesson we will be using are loosely based on those provided by software carp
 
 ## Prerequisites
 
-For this workshop we expect:
+For this workshop we expect you to:
 
-* Participants to bring their own laptops.
+* Bring your own laptops to use at the workshop.
 * Have network access to the internet.
-* Have some familiarity with the user of a terminal/shell/powershell but this is not mandatory.
-* You MUST have installed:
+* Have some familiarity with the use of a terminal/shell/git bash but this is not mandatory.
+* You MUST have installed (and be accessible from the shell you will be using):
   * A version of [git](https://carpentries.github.io/workshop-template/#git).
   * A [text editor](https://carpentries.github.io/workshop-template/#editor).
   
