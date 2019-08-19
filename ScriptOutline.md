@@ -514,9 +514,49 @@ Clearly this command will be of more use when multiple users are editing the sam
 
 ## Adding collaborators
 
+You will only do the following with people that you really trust. You will be paired up with another attendee. One of you will be `user 1` and the other will be `user 2`.  `User 2` will be your collaborator. 
+
+### Instructions for `User 1`
+
+Go to your GitHub remote repository web page. Then:
+
+* Click on `Settings`.
+* On the `Options` menu on the left click on`Collaborators & teams`.
+* You will have to confirm your password.
+* Find out the GitHub id of your collaborator.
+* Enter it into the `Add collaborators` search box.
+* Press on `Add collaborator`.
+
+## Instructions for `User 2`
+
+For `user 2` you should get an email from `User 1` to become a collaborator:
+
+* Go to the URL in the email or get the URL of their repository from `user 1`.
+* You will see a green button on the top right that says: `Clone or download`. Click on this, make sure you have the `Clone with https` option. Copy the URL.
+* On your shell now make sure that you are not in an existing git repository. To make sure type:
+
+```bash
+git status
+fatal: not a git repository (or any of the parent directories): .gitbash
+```
+
+and you are then safe. If you are still in an existing git repository do a `cd ..` until you see the above error message. Then clone `User 1`'s repository:
+
+```bash
+git clone URLofRemoteRepo/projectx.git
+```
+
+If you already have a `projectx`repo with the other name add an extra arguement to the above command, viz:
+
+```bash
+git clone URLofRemoteRepo/projectx.git projecty
+```
+
+which will call the repo `projecty` (you can choose whatever name you wish). Change directory into this repository. You are now ready to do the exercise.
+
 ## Exercise 2
 
-
+In this exercise `user 1` and `user 2` will be collaborating in the same repo. Make changes to the `Readme.md`, add new files, remember to do a `git pull` and `git push`. Use `git blame` to see who made what changes. Resolve any conflicts if these arise.
 
 # Back to local repositories
 
