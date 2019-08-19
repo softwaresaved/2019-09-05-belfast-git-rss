@@ -323,18 +323,18 @@ There are more, all services are roughly similar but for the free service these 
 
 ## Creating a remote repository
 
-We will use GitHub. We are going to create a remote repository on GitHub and push our content.
+We use GitHub. We are going to create a remote repository on GitHub and then push our local content.
 
 1. Go to [http://github.com](http://github.com/).
 2. Login (if you have not created an account you will have to sign up).
 3. Click on the `+` and choose `New repository`.
-4. Choose a name for your repository `projectX`.
-5. Use `…or push an existing repository from the command line`.
+4. Choose a name for your repository, e.g.  `projectX`.
+5. Follow the instructions under the heading `…or push an existing repository from the command line`.
 6. Follow the instructions there.
 7. Click on `Overview` on the left hand menu and you should see your file together with the commits.
 8. Click on source and you should be able to browse your sources.
 
-Now, go outside your git repo:
+Only do this if the above worked without error. Now, go outside your local git repo:
 
 ```bash
 cd ..           # Go outside your repository.
@@ -356,7 +356,67 @@ Make sure that:
 git clone https://github.com/YourId/YourProjectName.git OtherName
 ```
 
-The contents will then be saved to `OtherName`
+The contents will then be saved to `OtherName`.
+
+## Pulling remote changes
+
+On the remote repository you can make changes by clicking on the file that you wish to edit and then clicking on the pencil on the top right of the frame surrounding the file that you are viewing. 
+
+* Click on the pencil.
+* Make a change.
+* Go to the bottom of the file and commit the file with a sensible commit message.
+
+Your remote repository and local repository are different. To reconcile them in **your local repository** (make sure you are in the repository) do:
+
+```bash
+git pull
+```
+
+This will fetch the contents of the remote repository and try to do a merge with your local conent. A `git pull` is the same is the same as doing a `git fetch` and a `git merge` in one go.
+
+If the `git pull` works correctly, then the two repositories should be identical. 
+
+## Pushing local changes
+
+Now make a change in your local git repository:
+
+* Edit the `Readme.md` file.
+* Do a `git add`
+* Do a `git commit`
+
+Now the local repository is not reconciled with the remote repository. In order to synchronise both repositories in your local repository do:
+
+```bash
+git push
+```
+
+So now you know how to pull your changes from your remote repository to your local changes and how to push your local changes to the remote repository.
+
+## Pulling before you push
+
+Now do a change in the remote repository (change the title say) and also in the local repository (add a paragraph at the bottom of the file, make sure that your changes are in different locations of the file). Now try to reconcile the repositories by doing a push from the local to the remote repositories (it will fail):
+
+```bash
+git push
+To YourRepoURL
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'YourRepoURL'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+If the remote repository has changed you MUST pull the remote changes to your remote 
+
+## Resolving a conflict
+
+## Who to Blame
+
+## Adding collaborators
+
+
 
 # Back to local repositories
 
