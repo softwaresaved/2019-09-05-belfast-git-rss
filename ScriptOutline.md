@@ -1,5 +1,3 @@
-# This is a new title
-
 # Version control for statistics
 
 ## Contents
@@ -473,9 +471,10 @@ We then add and commit the file:
 ```bash
 git add Readme.md
 git commit -m"Resolved the title conflict."
+git push
 ```
 
-
+You would have to do that for every conflict (can sort out individually or in one go).
 
 ## Who to Blame
 
