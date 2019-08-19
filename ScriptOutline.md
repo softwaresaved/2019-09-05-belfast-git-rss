@@ -325,7 +325,7 @@ We will use GitHub. We are going to create a remote repository on GitHub and pus
 1. Go to [http://github.com](http://github.com/).
 2. Login (if you have not created an account you will have to sign up).
 3. Click on the `+` and choose `New repository`.
-4. Choose a name for your repository `theis`.
+4. Choose a name for your repository `projectX`.
 5. Use `…or push an existing repository from the command line`.
 6. Follow the instructions there.
 7. Click on `Overview` on the left hand menu and you should see your file together with the commits.
@@ -515,6 +515,15 @@ To push the branch to the remote repository:
 git push origin profile
 ```
 
+## Removing a remote repository
+If you do not wish to keep the remote test repository that you created you can remove it by:
+
+1. Go to the repository page on GitHub.
+2. On the top right you will see a gear wheel with the label `Settings`, click on that.
+3. Scroll down to the bottomo of this page to the `Danger Zone`, you will see a button to `Delete this Repository`, click on that.
+4. You will be asked to confirm the name of the repository, once you confirm your remote repository will be removed.
+
+You still have your local repository (unless you choose to remove that as well).
 # Resources
 
 * 
