@@ -15,6 +15,15 @@
    * [Adding directories](#adding-directories)
    * [Changing a commit message](#changing-a-commit-message)
 * [Creating remote repositories](#creating-remote-repositories)
+
+   * [Creating a remote repository](#creating-a-remote-repository)
+   * [Pulling remote changes](#pulling-remote-changes)
+   * [Pushing local changes](#pushing-local-changes)
+   * [Pulling before you push](#pulling-before-you-push)
+   * [Resolving a conflict](#resolving-a-conflict)
+   * [Who to Blame](#who-to-blame)
+   * [Adding collaborators](#adding-collaborators)
+   * [Exercise 2](#exercise-2)
 * [Back to local repositories](#back-to-local-repositories)
 
    * [Exploring history](#exploring-history)
