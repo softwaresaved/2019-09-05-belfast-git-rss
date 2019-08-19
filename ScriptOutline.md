@@ -478,7 +478,34 @@ You would have to do that for every conflict (can sort out individually or in on
 
 ## Who to Blame
 
+If you are collaborating with various people you may want to find out who made changes to what bit of the file and when. To do this you can use the `git blame` command:
+
+```bash
+git blame Readme.md
+8e33b5ce (Mario Antonioletti 2019-07-10 12:30:55 +0100  1) # RSS 2019 International Conference
+8e33b5ce (Mario Antonioletti 2019-07-10 12:30:55 +0100  2) ## Data Science: Version control for statistics
+8e33b5ce (Mario Antonioletti 2019-07-10 12:30:55 +0100  3) ### Belfast, 5th September 2019
+42722c97 (Mario Antonioletti 2019-06-07 17:29:34 +0100  4)
+45a95fd2 (Mario Antonioletti 2019-06-07 17:33:33 +0100  5) This page is for the [RRS 2019 International conference](https://www.rss.org.uk/RSS/Events/RSS_Conference/2019_Conference/RSS/Events/Conference/2019_conference.aspx?hkey=2a432b6b-6baf-4bc3-baa4-063221c13ab8) for the [Data Science: Version control for statistics (part 1)](https://events.rss.org.uk/rss/frontend/reg/titem.csp?pageID=104517&eventID=270) and [Data Science: Version control for statistics (cont)](https://events.rss.org.uk/rss/frontend/reg/titem.csp?pageID=108408&eventID=270) workshops.
+42722c97 (Mario Antonioletti 2019-06-07 17:29:34 +0100  6)
+42722c97 (Mario Antonioletti 2019-06-07 17:29:34 +0100  7) ## Learning objectives
+8b1d8347 (Mario              2019-07-11 13:39:47 +0100  8)
+...
+```
+
+This gives you:
+
+* The revision of when the change  was made
+* Who made the change
+* When they made the change
+* The line number of the file
+* The contents of the line
+
+Clearly this command will be of more use when multiple users are editing the same files.
+
 ## Adding collaborators
+
+## Exercise 2
 
 
 
