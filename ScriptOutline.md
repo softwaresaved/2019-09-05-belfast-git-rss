@@ -1,7 +1,5 @@
 # This is a new title
 
-
-
 # Version control for statistics
 
 ## Contents
@@ -426,7 +424,55 @@ git push   # If all went well with the pull
 git can merge text files if the changes happen in different locations. However, if the changes happen in the same line or roughly the same region then you have to resolve the conflict. Suppose we change the same line in both your local and remote repositories, say the title then when you do a pull you will see something like:
 
 ```bash
+git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From YourRepositoryURL
+   94a1451..00e44e8  master     -> origin/master
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+```
 
+If you look inside the file you will see:
+
+```bash
+<<<<<<< HEAD
+# This is a new title
+
+
+=======
+# This is the original title
+>>>>>>> 00e44e8974c0bfa7aff5dd3cb296a6be6ccea128
+```
+
+The first version , call this version A, is what is in your local repository. The version that is beow the `=======`, version B, is what was in the remote repository.  There may be one or more regions of conflict thus:
+
+```bash
+<<<<<<< HEAD
+
+version A
+=======
+
+version B
+
+>>>>>>> Some Has String
+```
+
+Your role, for each region of conflict,  is to choose Version A or Version B, a combination of both or neither but you need to get rid of the less than separators, the equal signs and the greater than signs. If you are collaborating you should talk to your collaborator. Suppose we want to keep version A. We then change the text to be:
+
+```bash
+# This is a new title
+```
+
+We then add and commit the file:
+
+```bash
+git add Readme.md
+git commit -m"Resolved the title conflict."
 ```
 
 
