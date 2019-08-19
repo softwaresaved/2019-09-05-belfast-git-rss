@@ -6,14 +6,14 @@ This page is for the [RRS 2019 International conference](https://www.rss.org.uk/
 
 ## Learning objectives
 
-The lesson we will be using are loosely based on those provided by software carpentry. By the end of the course you will be able to:
+The lesson we are using are loosely based on those provided by software carpentry. By the end of the course you will be able to:
 
 * Setup a local git repository. 
 * Be able to `add`, `commit`, view the log, view changes you have made to files.
-* Understand how to recover previous states of your files.
-* Understand what is meant by branching.
+* Understand how to recover previous states of your files and directories.
 * Be able to use a remote repository.
 * Understand the different collaborative models that can be applied.
+* Understand what is meant by branching.
 
 ## Prerequisites
 
