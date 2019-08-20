@@ -32,6 +32,7 @@
 * [Branching](#branching)
 
    * [Removing a remote repository](#removing-a-remote-repository)
+* [Forking repositories](#forking-repositories)
 * [Resources](#resources)
 
 # Setting up a local repository
@@ -718,7 +719,12 @@ To push the branch to the remote repository:
 git push origin profile
 ```
 
+# Forking repositories
+
+
+
 ## Removing a remote repository
+
 If you do not wish to keep the remote test repository that you created you can remove it by:
 
 1. Go to the repository page on GitHub.
@@ -729,7 +735,7 @@ If you do not wish to keep the remote test repository that you created you can r
 You still have your local repository (unless you choose to remove that as well).
 # Resources
 
-* 
+* [A visual git reference](https://marklodato.github.io/visual-git-guide/index-en.html) provides a visual representation for git commands.
 
 <br/>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/>
