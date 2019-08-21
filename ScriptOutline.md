@@ -721,7 +721,7 @@ git push origin profile
 
 # Forking repositories
 
-
+$\Sigma^N_{i=1}$
 
 ## Removing a remote repository
 
@@ -735,9 +735,10 @@ If you do not wish to keep the remote test repository that you created you can r
 You still have your local repository (unless you choose to remove that as well).
 # Resources
 
-* [Pro Git book](https://git-scm.com/book/en/v2) an entire book on git and downloadable in various formats (pdf/epub/mobi).
+* [Pro Git book](https://git-scm.com/book/en/v2) an entire book on git available on-line and downloadable in various formats (pdf/epub/mobi).
 * [A visual git reference](https://marklodato.github.io/visual-git-guide/index-en.html) provides a visual representation for git commands.
 * [Visualizing Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3/) allows you to schematically visualise what is happening as you type git commands.
+* [Git How To](https://githowto.com/) a git tutorial that takes you through the commands that you need in small bite size pieces.
 
 <br/>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/>
