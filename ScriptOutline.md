@@ -722,7 +722,6 @@ git push origin profile
 
 # Forking repositories
 
-$\Sigma^N_{i=1}$  <-- test.
 
 ## Removing a remote repository
 
