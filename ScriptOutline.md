@@ -736,6 +736,7 @@ You still have your local repository (unless you choose to remove that as well).
 # Resources
 
 * [A visual git reference](https://marklodato.github.io/visual-git-guide/index-en.html) provides a visual representation for git commands.
+* [Visualizing Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3/) allows you to schematically visualise what is happening as you type git commands.
 
 <br/>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br/>
