@@ -33,6 +33,9 @@
 
    * [Removing a remote repository](#removing-a-remote-repository)
 * [Forking repositories](#forking-repositories)
+
+   * [Setting up](#setting-up)
+   * [Keeping up to date with the upstream repo](#keeping-up-to-date-with-the-upstream-repo)
 * [Resources](#resources)
 
 # Setting up a local repository
@@ -722,7 +725,7 @@ git push origin profile
 
 # Forking repositories
 
-## Setting-up
+## Setting up
 
 To avoid confusion there will be three repositories involved in this interaction:
 
