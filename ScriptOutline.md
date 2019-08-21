@@ -722,6 +722,57 @@ git push origin profile
 
 # Forking repositories
 
+## Setting-up
+
+To avoid confusion there will be three repositories involved in this interaction:
+
+1. An `upstream` repository which you fork (create a remote repository).
+2. An `origin` repository which is the resulting copy of the fork.
+3. A local repository which is your `clone` of the `origin` repository.
+
+Still in your established pairs go to your collaborators repository and:
+
+* On the top right press on the `fork` button.
+  * This will make a copy of the repository in your GitHub account.
+* On your local account outside any existing git repository `clone` YOUR repository to your own machine (remember you can find out the URL by clicking on the `Clone or download` green button).
+
+```bash
+git clone URLForYourOwnRepo
+```
+
+* You want to keep track of the original repository you forked from in your local repository to incorporate any changes your collaborator may make so we create a new pointer (use the URL you would clone from) in your local repository:
+
+```bash
+git remote add upstream TheOriginalRepo
+```
+
+* Check:
+
+```
+git remote -v
+```
+
+You should have:
+
+   1. ` origin` URL points to your own remote git repository
+   2. `upstream` URL points to the repository from which you forked the repo.
+
+## Keeping up to date with the upstream repo
+
+Remember this way of operation assumes that you cannot write to the remote repo:
+
+* Now, go back to your own remote repository which your collaborator forked and make some changes and commit these.
+* The original repository from which you forked has changed you want to incorporate the changes to your own local repository and then push these to your remote repository so you have to do:
+
+```bash
+# Get the changes from the forked repository into your master 
+# branch
+git pull upstream master 
+# push to your remote repository (default is origin)
+git push           
+```
+
+Look at your remote repository and check it is the same as the repository from which you forked.
 
 ## Removing a remote repository
 
