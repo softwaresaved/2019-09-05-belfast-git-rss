@@ -735,6 +735,7 @@ If you do not wish to keep the remote test repository that you created you can r
 You still have your local repository (unless you choose to remove that as well).
 # Resources
 
+* [Pro Git book](https://git-scm.com/book/en/v2) an entire book on git and downloadable in various formats (pdf/epub/mobi).
 * [A visual git reference](https://marklodato.github.io/visual-git-guide/index-en.html) provides a visual representation for git commands.
 * [Visualizing Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3/) allows you to schematically visualise what is happening as you type git commands.
 
