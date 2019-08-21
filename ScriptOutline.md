@@ -40,6 +40,7 @@
 ## Pre-checks
 
 These are a reminder for the instructor. Make sure that:
+
 * Your `~/.gitconfig` file has been temporarily moved.
 * People can be paired up for the collaborative working.
 
@@ -610,7 +611,7 @@ git reset --hard HEAD
 
 ## Ignoring files
 
-You have seen that `git status` is a really useful command to  show you what has been changed. However if you have files that you do not want to put in the repository such as emacs back up  files, binary files, etc you can tell git to ignore these by creating a `.gitignore` file. In addition, you want to put the names of files that you NEVER want to commit into your repository that may have sensitive information, e.g. password files, sensitive data, etc. You can create this file and  add content that will apply recursively:
+You have seen that `git status` is a really useful command to  show you what has been changed. However, if you have files that you do not want to put in the repository such as emacs back up  files, binary files, large data files, etc. you can tell git to ignore these by creating a `.gitignore` file. In addition, you want to put the names of files that you NEVER want to commit into your repository that may have sensitive information, e.g. password files, sensitive data, etc. You can create this file and  add content that will apply recursively:
 
 ```bash
  *~
@@ -650,7 +651,7 @@ Use lightweight tags for your own use and annotated tags for the benefit of othe
 
 # Branching
 
-Branching allows a very powerful way of forking your code. Suppose you want to instrument it for performance analysis or you are collaborating and you do not want to be modifying the same code at the same time. Unlike CVS and SVN branches are really cheap and uncomplicated.
+Branching allows a powerful way of forking your code. Suppose you want to instrument it for performance analysis or you are collaborating and you do not want to be modifying the same code at the same time. Unlike CVS and SVN branches are really cheap and uncomplicated.
 
 Can use to:
 
@@ -721,7 +722,7 @@ git push origin profile
 
 # Forking repositories
 
-$\Sigma^N_{i=1}$
+$\Sigma^N_{i=1}$  <-- test.
 
 ## Removing a remote repository
 
