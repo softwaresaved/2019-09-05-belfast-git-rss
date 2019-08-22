@@ -727,11 +727,14 @@ git push origin profile
 
 ## Setting up
 
-To avoid confusion there will be three repositories involved in this interaction:
+To avoid confusion there will be four repositories involved in this interaction:
 
-1. An `upstream` repository which you fork (create a remote repository).
-2. An `origin` repository which is the resulting copy of the fork.
-3. A local repository which is your `clone` of the `origin` repository.
+1. **R1**:  your own remote repository that will be cloned by your collaborator.
+2. **R2**:  the `upstream` repository of your collaborator which you will `fork` (create a remote repository).
+3. **R3**: an `origin` repository which is the resulting copy of the fork.
+4. **R4**: a local repository which is your `clone` of the `origin` repository.
+
+![Schematic representation of scenario.](/Users/mario/GitRepos/git-workshop-RSS-conference/imgs/ForkGit.png)
 
 Still in your established pairs go to your collaborators repository and:
 
