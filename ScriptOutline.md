@@ -734,7 +734,7 @@ To avoid confusion there will be four repositories involved in this interaction:
 3. **R3**: an `origin` repository which is the resulting copy of the fork.
 4. **R4**: a local repository which is your `clone` of the `origin` repository.
 
-![Schematic representation of scenario.](/Users/mario/GitRepos/git-workshop-RSS-conference/imgs/ForkGit.png)
+![Schematic representation of scenario.](imgs/ForkGit.png)
 
 Still in your established pairs go to your collaborators repository and:
 
