@@ -36,6 +36,7 @@
 
    * [Setting up](#setting-up)
    * [Keeping up to date with the upstream repo](#keeping-up-to-date-with-the-upstream-repo)
+   * [Pull requests](#pull-requests)
 * [Resources](#resources)
 
 # Setting up a local repository
@@ -727,32 +728,32 @@ git push origin profile
 
 ## Setting up
 
-To avoid confusion there will be four repositories involved in this interaction:
+To avoid confusion a number of repositories are involved in this interaction:
 
-1. **R1**:  your own remote repository that will be cloned by your collaborator.
-2. **R2**:  the `upstream` repository of your collaborator which you will `fork` (create a remote repository).
-3. **R3**: an `origin` repository which is the resulting copy of the fork.
-4. **R4**: a local repository which is your `clone` of the `origin` repository.
+1. **R1**:  your own remote repository that we have been working on today which will be forked by your collaborator.
+2. **R2**:  the (`upstream`) repository of your collaborator which you will `fork` (create your own remote repository).
+3. **R3**: the remote repository which is the resulting copy produced by the fork.
+4. **R4**: a local repository which is your `clone` of the your remote repository.
 
 ![Schematic representation of scenario.](imgs/ForkGit.png)
 
-Still in your established pairs go to your collaborators repository and:
+Still in your established pairs, go to your collaborators repository and:
 
 * On the top right press on the `fork` button.
   * This will make a copy of the repository in your GitHub account.
-* On your local account outside any existing git repository `clone` YOUR repository to your own machine (remember you can find out the URL by clicking on the `Clone or download` green button).
+* On your local account, outside any existing git repository, `clone` YOUR repository to your own machine (remember you can find out the URL by clicking on the `Clone or download` green button).
 
 ```bash
 git clone URLForYourOwnRepo
 ```
 
-* You want to keep track of the original repository you forked from in your local repository to incorporate any changes your collaborator may make so we create a new pointer (use the URL you would clone from) in your local repository:
+* You want to keep track of the original repository from which you forked from in your own local repository. This will allow you to incorporate any changes your collaborator make so we need to create a new pointer to this repository (use the URL you would clone from) in your local repository. We will call it `upstream` but you can use any name:
 
 ```bash
 git remote add upstream TheOriginalRepo
 ```
 
-* Check:
+* Check (this will list the remote repositories defined in your system):
 
 ```
 git remote -v
@@ -760,25 +761,29 @@ git remote -v
 
 You should have:
 
-   1. ` origin` URL points to your own remote git repository
+   1. ` origin` URL points to your own remote git repository.
    2. `upstream` URL points to the repository from which you forked the repo.
 
 ## Keeping up to date with the upstream repo
 
 Remember this way of operation assumes that you cannot write to the remote repo:
 
-* Now, go back to your own remote repository which your collaborator forked and make some changes and commit these.
-* The original repository from which you forked has changed you want to incorporate the changes to your own local repository and then push these to your remote repository so you have to do:
+* Now, go back to your own remote repository (**R1**), which your collaborator will have forked, and make some changes and commit these to your remote repository. Make sure your collaborator has done this before proceeding to the next step.
+* The original repository from which you forked (**R2**) has changed you want to incorporate these changes back to your own local repository and then push these to your remote repository so you have to do:
 
 ```bash
 # Get the changes from the forked repository into your master 
-# branch
+# branch (your main development branch - more on this later)
 git pull upstream master 
 # push to your remote repository (default is origin)
 git push           
 ```
 
 Look at your remote repository and check it is the same as the repository from which you forked.
+
+## Pull requests
+
+
 
 ## Removing a remote repository
 
