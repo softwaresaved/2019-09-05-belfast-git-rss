@@ -783,7 +783,16 @@ Look at your remote repository and check it is the same as the repository from w
 
 ## Pull requests
 
+Now make some changes to your own local version of the forked repository (**R4**). Make sure that you `push` these to your own remote repository (**R3**). Now, suppose you think these are really good and you think your remote collaborator would benefit from incorporating them into their repository - you are going to do this via a `pull request` asking the other person to accept these changes.
 
+On the top left you should see a button `New pull request`. If you press on this it will take you to a window where the changes are described and whether these can be merged or not. Click on  `Create pull request`. This will take you to a page where you can describe your changes and inform the original repository owner why they may want to incorporate their changes.
+
+Check that your collaborator has issued their own `pull request`. Go back to your original repository and check - you should see a `pull request` on the tab at the top. Click on that and then click on the pull request - you can then inspect the changes and choose whether you want to:
+
+
+
+* `Merge pull request` (or you can `squash and merge` - take several commits and make them one, `Rebase and merge` - add it to the appropriate point in the commit history). You will need to `Confirm the merge` and you have incorporated the changes into your repo.
+* If you do not want the changes then Close the commit at the bottom without merging.
 
 ## Removing a remote repository
 
