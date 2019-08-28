@@ -133,6 +133,14 @@ Check what is there:
 ls -A
 ```
 
+Check that wed do not have a repository:
+
+```bash
+git status
+```
+
+This will return an error because we do not have a repository:
+
 Initialise the repository:
 
 ```bash
@@ -302,7 +310,7 @@ git status
 git add data
 git status
 ```
-you need to add a file - you can create a temporary file:
+you need to add a file - you can create a temporary file until you populate with data:
 
 ```bash
 cd data
@@ -789,10 +797,8 @@ On the top left you should see a button `New pull request`. If you press on this
 
 Check that your collaborator has issued their own `pull request`. Go back to your original repository and check - you should see a `pull request` on the tab at the top. Click on that and then click on the pull request - you can then inspect the changes and choose whether you want to:
 
-
-
 * `Merge pull request` (or you can `squash and merge` - take several commits and make them one, `Rebase and merge` - add it to the appropriate point in the commit history). You will need to `Confirm the merge` and you have incorporated the changes into your repo.
-* If you do not want the changes then Close the commit at the bottom without merging.
+* If you do not want the changes then `Close the commit` button at the bottom without merging. Be polite, the other person will be informed.
 
 ## Removing a remote repository
 
