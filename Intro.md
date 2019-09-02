@@ -1,6 +1,6 @@
-- SSI: who we are
+- SSI: who we are and what we do
 
-- What we do
+- Research software and Statistics
 
 - What is versioning
   - Keeping track of versions of work (individual / collaborative)
