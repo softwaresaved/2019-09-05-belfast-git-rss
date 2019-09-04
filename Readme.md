@@ -25,19 +25,6 @@ For this workshop we expect you to:
 * You MUST have installed (and be accessible from the shell you will be using):
   * A version of [git](https://carpentries.github.io/workshop-template/#git).
   * A [text editor](https://carpentries.github.io/workshop-template/#editor).
-  
-## Schedule
-
-The times given here are for guidance purposes.
-
-|Time|Topic|
-|----|-----|
-|14:00|Why use version control|
-|14:15|Setup|
-|x|x|
-|15:00|Break|
-|15:30|Resume|
-|16:50|Finish|
 
 <br>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
